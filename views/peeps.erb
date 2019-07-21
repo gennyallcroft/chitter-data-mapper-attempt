@@ -1,0 +1,7 @@
+<form action="/peep">
+  <input type="submit" value="PEEP"/>
+</form>
+
+<% @peeps.each do |peep| %>
+	     <p><%= peep.created_at %>">- <%= peep.peep %></p>
+          <% end %>
